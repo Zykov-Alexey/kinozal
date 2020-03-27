@@ -30,44 +30,8 @@
   transition: background-color 0.5s;
 }
 
-@media (max-width: 767.8px) {
-  .navbar-inverse .navbar-nav > li > a {
-    text-align: center;
-  }
-}
-
-@media (min-width: 768px) {
-  .navbar-inverse .navbar-nav > li > a {
-    border-radius: 4px;
-  }
-}
-
 .navbar-inverse .navbar-nav > li > a:hover, .navbar-inverse .navbar-nav > li > a:focus {
   background-color: #165690;
-}
-
-@media (max-width: 767.8px) {
-  .navbar-left {
-    margin-bottom: 0;
-  }
-}
-
-@media (min-width: 768px) {
-  .navbar-left > li {
-    margin: 5px 5px 5px 0;
-  }
-}
-
-@media (max-width: 767.8px) {
-  .navbar-right {
-    margin-top: 0;
-  }
-}
-
-@media (min-width: 768px) {
-  .navbar-right > li {
-    margin: 5px 0 5px 5px;
-  }
 }
 
 .panel {
@@ -140,20 +104,6 @@ a:hover, a:focus {
   letter-spacing: 0.33em;
 }
 
-@media (min-width: 576px) {
-  .header-logo__title {
-    font-size: 3.5rem;
-    etter-spacing: 0.33em;
-  }
-}
-
-@media (min-width: 576px) {
-  .header-logo__title {
-    font-size: 2.5rem;
-    etter-spacing: 0.2em;
-  }
-}
-
 .header-logo__description {
   display: block;
   font-size: 1.15rem;
@@ -184,8 +134,8 @@ a:hover, a:focus {
   top: 50%;
   right: 12px;
   -webkit-transform: translateY(-50%);
-  -ms-transform: translateY(-50%);
-  transform: translateY(-50%);
+      -ms-transform: translateY(-50%);
+          transform: translateY(-50%);
 }
 
 .top-films-item {
@@ -225,4 +175,37 @@ a:hover, a:focus {
   background-color: #232323;
 }
 
-/*# sourceMappingURL=style.css.map */
+@media (min-width: 576px) {
+  .header-logo__title {
+    font-size: 3.5rem;
+    letter-spacing: 0.33em;
+  }
+  .header-logo__title {
+    font-size: 2.5rem;
+    letter-spacing: 0.2em;
+  }
+}
+
+@media (min-width: 768px) {
+  .navbar-inverse .navbar-nav > li > a {
+    border-radius: 4px;
+  }
+  .navbar-left > li {
+    margin: 5px 5px 5px 0;
+  }
+  .navbar-right > li {
+    margin: 5px 0 5px 5px;
+  }
+}
+
+@media (max-width: 767.8px) {
+  .navbar-inverse .navbar-nav > li > a {
+    text-align: center;
+  }
+  .navbar-left {
+    margin-bottom: 0;
+  }
+  .navbar-right {
+    margin-top: 0;
+  }
+}

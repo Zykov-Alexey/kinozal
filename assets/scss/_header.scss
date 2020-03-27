@@ -19,11 +19,11 @@
 
     @include xs-min{
       font-size: 3.5rem;
-      etter-spacing: 0.33em;
+      letter-spacing: 0.33em;
     }
     @include xs-min{
       font-size: 2.5rem;
-      etter-spacing: 0.2em;
+      letter-spacing: 0.2em;
     }
   }
   &__description{
